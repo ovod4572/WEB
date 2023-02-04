@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function showName() {
+            let name = prompt(`ВВедите имя`, `Имя`);
+            let userName = `Сара`;
+            if (userName == name) {
+                let message = `Привет, ` + userName;
+                alert(message);
+            }
+            else {
+                alert(`Вы не  ` + userName);
+                showName();
+            }
+        }
+        showName();
+    </script>
+
+</body>
+
+</html>
